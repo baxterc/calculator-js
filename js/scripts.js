@@ -19,28 +19,32 @@ $(document).ready(function() {
     event.preventDefault();
     var number1 = parseInt($("#add .one").val());
     var number2 = parseInt($("#add .two").val());
-    alert(add(number1, number2));
+    var result = add(number1, number2);
+    $("#output").text(result);
   });
 
   $("form#subtract").submit(function(event) {
     event.preventDefault();
     var number1 = parseInt($("#subtract .one").val());
     var number2 = parseInt($("#subtract .two").val());
-    alert(subtract(number1, number2));
+    var result = subtract(number1, number2);
+    $("#output").text(result);
   });
 
   $("form#multiply").submit(function(event) {
     event.preventDefault();
     var number1 = parseInt($("#multiply .one").val());
     var number2 = parseInt($("#multiply .two").val());
-    alert(multiply(number1, number2));
+    var result = multiply(number1, number2);
+    $("#output").text(result);
   });
 
   $("form#divide").submit(function(event) {
     event.preventDefault();
     var number1 = parseInt($("#divide .one").val());
     var number2 = parseInt($("#divide .two").val());
-    alert(divide(number1, number2));
+    var result = divide(number1, number2);
+    $("#output").text(result);
   });
 });
 
