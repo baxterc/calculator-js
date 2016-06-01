@@ -3,9 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Calculator</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>Calculator</h1>
-    <script src="js/scripts.js"></script>
+    <div class="container">
+      <h1>Calculator</h1>
+      <div class="row">
+        <div id="answer" class="col-sm-12">
+          <span id="result"></span>
+        </div>
+      </div>
+      <div class="row">
+          <div class="number col-sm-3">
+            <button type="button" class="btn" id="one">1</button>
+          </div>
+          <div class="number col-sm-3">
+            <button type="button" class="btn" id="two">2</button>
+          </div>
+          <div class="number col-sm-3">
+            <button type="button" class="btn" id="three">3</button>
+          </div>
+      </div>
+    </div>
   </body>
 </html>
